@@ -4,16 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harjoitus 11</title>
+     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1>Azure: Kysymyksiä ja vastauksia</h1>
-    <h3>1. Mikä on Microsoft Azure ja mihin sitä käytetään?</h3>
-    <h3>2. Mitä eroa on Azure Virtual Machinella ja Azure App Servicellä?</h3>
-    <h3>3. Mikä on Azure Resource Group?</h3>
-    <h3>4. Mihin Azure Blob Storagea käytetään?</h3>
-    <h3>5. Mikä on Microsoft Entra ID:n rooli Azuressa?</h3>
+    <div>
+        <h3>1. Mikä on Microsoft Azure ja mihin sitä käytetään?</h3>
+        <h3>2. Mitä eroa on Azure Virtual Machinella ja Azure App Servicellä?</h3>
+        <h3>3. Mikä on Azure Resource Group?</h3>
+        <h3>4. Mihin Azure Blob Storagea käytetään?</h3>
+        <h3>5. Mikä on Microsoft Entra ID:n rooli Azuressa?</h3>
+    </div>
 
-    <button>Näytä vastaukset</button>
+    <button onclick="toggleAnswers()">Näytä vastaukset</button>
+
+    <div id="answers" hidden>
+        <h2>Vastaukset</h2>
+        <h3>1. Microsoftin pilvipalvelualusta, jolla voi ajaa sovelluksia, palvelimia, tietokantoja ja muita IT-palveluita.</h3>
+        <h3>2. VM antaa kokonaisen virtuaalipalvelimen hallittavaksi, kun taas App Service on valmiimpi alusta web-sovellusten ajamiseen.</h3>
+        <h3>3. Looginen ryhmä, johon Azure-resurssit, kuten VM:t ja tietokannat, voidaan koota hallintaa varten.</h3>
+        <h3>4. Käytetään suurten tiedostojen ja objektidatan, kuten kuvien, videoiden, varmuuskopioiden ja dokumenttien tallentamiseen.</h3>
+        <h3>5. Hallitsee käyttäjien tunnistautumista, kirjautumista ja käyttöoikeuksia Azure-palveluihin.</h3>
+    </div>
+
+    <script src="js/functions.js"></script>
+
+
+
+
     
 </body>
 </html>
